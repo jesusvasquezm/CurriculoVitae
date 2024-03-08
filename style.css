@@ -1,34 +1,74 @@
+:root {
+    --main-font: "Roboto", sans-serif;
+    --primary--color: #000000;
+    --secondary-color: #436850;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /*  */
-body {
-    font-family: "Roboto", monospace;
-    font-size: 26px;
-    text-align: left;
-    margin:50px 600px 100px 600px ;
-    
-}
-
-
-.name{
+.container__curriculum {
+    font-family: var(--main-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary--color);
     text-align: center;
-    margin-top: 100px;
+    padding: 4% 12%;
+}
+
+.container__name {
+
+}
+
+.container__info {
+    padding: 4% 0 2% 0;
+    text-align: left;
+}
+
+.container__info__list {
+    list-style-type: none;
+}
+
+.container__info__list__item {
+    display: flex;
+    margin-bottom: 2px;
     
 }
-
-.info{
-    line-height: 0.6;
-    margin: 0 0 60px 0;
+.container__info__link {
+    text-decoration: none;
+    padding-left: 4px;
 }
 
-.short-line{
-    line-height: 0;
+.container__content {
+    text-align: left;
 }
 
-
-.resumo, .objetivo, .experiencia, .form-academic, .tech, .curso-Comp, .idiomas{
-    margin:  0 0 45px 0;
+h3,h4{
+    padding: 3% 0 3% 0;
 }
 
-.sub-title{
-   font-weight: bold;
+.container__content__divider {
+    padding: 0 0 8% 0;
+}
+
+.container__content__experience {
+    padding: 0 0 1% 0;
+}
+
+.container__content__company {
+    color: var(--secondary-color);
+}
+
+.rodape {
+    color: var(--primary--color);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 0 2em 0;
+}
+
+.rodape__version {
+    font-size: 0.5em;
 }
